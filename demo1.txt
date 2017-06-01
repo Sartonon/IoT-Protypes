@@ -1,0 +1,35 @@
+1.2
+
+passwd pi
+
+sudo adduser sartonon
+..
+..
+sudo adduser sartonon sudo
+muut asetukset..
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get autoremove
+
+1.3
+
+sudo apt-get install tightvncserver
+
+cd /home/pi
+cd .config
+mkdir autostart
+cd autostart
+nano tightvnc.desktop
+
+[Desktop Entry]
+Type=Application
+Name=TightVNC
+Exec=vncserver :1
+StartupNotify=false
+
+IP-soite: 192.168.10.53
+asennusaikana: 192.168.137.1?
+
+Vnc viewer macciin ja yhteys sillä:
+192.168.10.53:5901
