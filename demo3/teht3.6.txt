@@ -1,1 +1,1 @@
-0 * * * * raspistill -o /home/cam.jpg
+0 * * * * raspistill -o /home/pi/Desktop/cam.jpg
