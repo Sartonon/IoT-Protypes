@@ -1,0 +1,1 @@
+0 * * * * raspistill -o /home/cam.jpg
