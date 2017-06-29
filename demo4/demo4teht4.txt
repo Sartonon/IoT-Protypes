@@ -1,2 +1,3 @@
-area_detect 5
-; on_area_detected value
+# PGM file to use as a sensitivity mask.
+# Full path name to. (Default: not defined)
+mask_file /home/pi/motion/maski2.pgm
