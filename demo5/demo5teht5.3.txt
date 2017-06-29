@@ -1,0 +1,27 @@
+redi1.py:
+import redis
+import time
+red = redis.StrictRedis(host='localhost', port=6379, db=0)
+# publish  
+red.publish("topic","value")
+# subscribe  
+
+while True:
+ red.publish("topic","value")
+ time.sleep(0.2)
+
+
+redis2.py:
+
+import redis
+import time
+
+red = redis.StrictRedis(host='localhost', port=6379, db=0)
+pub = red.pubsub()
+pub.subscribe('topic')
+
+while True:
+ viesti=pub.get_message()
+ if viesti != None:
+  print viesti['data']
+ time.sleep(0.2)

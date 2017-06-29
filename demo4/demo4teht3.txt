@@ -1,0 +1,3 @@
+max_movie_time 10
+post_capture 20
+ffmpeg_output_movies on

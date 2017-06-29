@@ -1,0 +1,2 @@
+logfile /home/pi/motionpii/motionpii.log
+target_dir /var/lib/motionpii 

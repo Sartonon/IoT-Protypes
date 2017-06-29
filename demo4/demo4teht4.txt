@@ -1,0 +1,2 @@
+area_detect 5
+; on_area_detected value
